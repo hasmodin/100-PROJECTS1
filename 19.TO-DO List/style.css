@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(100deg, red, blue);
+
+}
+
+.todo-container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.item-one {
+    box-shadow: 1px 1px 6px white;
+    padding: 2rem;
+}
+
+.item-one h1 {
+   
+    margin-bottom: 4rem;
+    color: #fff;
+
+}
+
+.item-one h1 i{
+    color:chocolate;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    
+}
+
+.todo-content {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-content input {
+    
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    font-size: 1.1rem;
+    box-shadow: 1px 1px 4px black;
+    width: 100%;
+    
+}
+
+.todo-content input:hover {
+    outline-color: green;
+    outline-style: solid;
+}
+
+.todo-content .taskbtn {
+    width: 50%;
+    left: 14.80rem;
+    padding: 1rem 2rem;
+    border: none;
+    box-shadow: 1px 1px 4px black;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    border-left: 3px solid black;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 1s;
+    
+
+}
+
+
+
+.todo-content .taskbtn:hover {
+    background-color: green;
+    color: #fff;
+
+}
+.item-two {
+    line-height: 2;
+}
+.item-two h2 {
+    color: #fff;
+}
+
+.item-two h1 {
+    color: chocolate;
+    font-weight: 900;
+}
+
+
+ol {
+    position: relative;
+    color: #fff;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    width: 50%;
+    
+}
+ol li {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    
+    
+}
+ li {
+    width: 100%;
+ }
+
+.del {
+    position: absolute;
+    right: -10rem;
+    padding: 0.5rem 1rem;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin-left: 100%;
+    
+}
+
+@media (max-width:500px) {
+    .del {
+       margin-left: 200px;
+    }
+}
