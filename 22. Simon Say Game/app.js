@@ -12,7 +12,7 @@ let started = false;
 document.addEventListener("keypress", () => {
     if(started == false) {
         started = true;
-        console.log("game started");
+        // console.log("game started");
     }
   levelUp();
 })
@@ -34,8 +34,9 @@ const levelUp = () => {
     let randBtn = document.querySelector(`.${randColor}`);
     // console.log(randBtn);
     // console.log(randColor);
+    // console.log(gameSeq);
     gameSeq.push(randColor);
-    console.log(gameSeq);
+   
     gameFlash(randBtn);
     
 }
@@ -46,7 +47,7 @@ const chekAns = (idx) => {
             setTimeout(levelUp, 1000);
         }
     }else {
-        h3.innerHTML = `GAME IS OVER ! <b> Your Score </b> ${level} <br> Please Press any key to start.`;
+        h3.innerHTML = `GAME IS OVER ! <b> Your Score : </b> ${level} <br> Please Press any key to start.`;
         reset();
     }
 }
@@ -57,8 +58,8 @@ function btnPress() {
     gameFlash(btn);
     userColor = btn.getAttribute("id");
     userSeq.push(userColor)
-    console.log(userSeq);
-    console.log(userColor);
+    // console.log(userSeq);
+    // console.log(userColor);
 
     chekAns(userSeq.length-1);
     
