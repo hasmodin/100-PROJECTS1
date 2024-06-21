@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
         copyText.select(); //select method used to select all input text
         document.execCommand("copy");
   
-   
+        
 
         
     })
