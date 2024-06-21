@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Progress Bar Using JS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1 style="color: white; margin-bottom: 100px;">Progress Bar Using HTML, CSS & JavaScript!</h1>
+    <div class="container">
+        
+        <div class="progress-container">
+            <div class="progress" id="progress"> </div>
+            <div class="circle active">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+       
+        </div>
+
+        <div class="button-container">
+            <button class="btn" id="prev">Previous</button>
+            <button class="btn" id="next">Next</button>
+        </div>
+        
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
