@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: sans-serif;
+    background-color: brown;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 400px;
+    
+}
+
+
+.input-container {
+    width: 400px;
+    background-color: white;
+    position: relative;
+    border-radius: 1rem;
+    
+}
+input {
+    padding: 1rem 4rem 1rem 1rem;
+    border: none;
+    outline: none;
+    background-color: none;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.eye-container {
+    position: relative;
+    right: 40px;
+
+}
+
+.eye-container i {
+    font-size: 1.5rem;
+    opacity: 0.7;
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+.eye-container i:hover {
+   
+    opacity: 1;
+}
