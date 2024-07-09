@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background-color: blueviolet;
+}
+
+#insert {
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.key {
+    background-color: blueviolet;
+    padding: 1rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    font-size: 1.4rem;
+    font-weight: bold;
+    flex-direction: column;
+    padding: 1.2rem;
+    margin: 10px;
+    min-width: 150px;
+    position: relative;
+
+}
+
+.key small {
+    position: absolute;
+    top: -24px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: #555;
+    font-size: 14px;
+}
